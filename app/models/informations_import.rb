@@ -23,7 +23,7 @@ class InformationsImport
 
   def load_imported_users
     spreadsheet = open_spreadsheet
-    data = Roo::Spreadsheet.open('lib/data.xlsx') 
+    data = Roo::Spreadsheet.open('lib/TaskSampleSheet.xlsx') 
     headers = data.row(1) 
     data.each_with_index do |row, idx|
       next if idx == 0 
